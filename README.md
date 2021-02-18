@@ -1,2 +1,3 @@
-# rff-svs
-Scalable Variable Selection for Reproducing Kernel Hilbert Spaces Methods.
+# RFF + Scalable Variable Selection
+
+Repository to develop software, store and curate data for my Master's dissertation on variable selection in RKHS methods.
