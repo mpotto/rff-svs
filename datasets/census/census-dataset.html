@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//SQ//DTD HTML 2.0 HoTMetaL + extensions//EN"><html><head>
+<link rel="icon" data-savepage-href="" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAACoZQMA8+rXANu/hQDElTcA6tm6AP/75gDRrGIAuYAMAOLNoQDKnkkA7uHKAL2HKADfx5UA1bVzAPfw5AD///8AsHEDAOfVrwC6ghkAzaNTALN3CADXuXwA/Pr3AO3fxADfx5kA+vfwANSxbQDHmkMA28CLALyGHwDx59QA9e7fAM+oXQD+/fUA69y+AOHLnADo17UAtYQZALJ0AwDAjTIA9/fmALN3EwDexI4A1rh5ANSybACtawMAzqVKAL6JJQD/9+8Av4wpAPDlzgDjz6MAxZRCALV5CgDjzZ8A2byCAMmdSADm3r0ArWMAALiAEwDOpl8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPRkaBCAiDREMKhEaIjwKPT0WDhkMGAIcKiocDA4OGT09PT09Fh8EOy0vMx89PT09PT09FhY9PQIAIz09KD09PT09GSIGKD0sABE9EQ0BFj09PRkKJB8zJhAdCjIXHj09PQ43CzESAysHNzELMScIGT0EMSYQOD0eJj0ZLxA1NAEhCR0vDR8BEykrKBcGEjEGPSQjKh8TFCoMNxQaHzcRFz0MAh8bEAkkExYSFAYOFTMhFx8IAwkXGiYBNhsDCh4XPRY9HxkXHzsxMh8fHxk9Fj09PT0XDQoTEiQYHD09PT09PT09AQQONhMeChc9PT09PT09PT09PT0FPT09PT09PYABAACAAQAA8A8AAOY3AADCIQAAwAMAAIAAAACCQAAAAAAAAIAAAACAAAAAAAAAAKACAADwDwAA8A8AAP9/AAA="><title> delve census dataset </title>
+<style id="savepage-cssvariables">
+  :root {
+  }
+</style>
+<script id="savepage-shadowloader" type="application/javascript">
+  "use strict";
+  window.addEventListener("DOMContentLoaded",
+  function(event) {
+    savepage_ShadowLoader(5);
+  },false);
+  function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+</script>
+<meta name="savepage-url" content="http://www.cs.toronto.edu/~delve/data/census-house/censusDetail.html">
+<meta name="savepage-title" content="delve census dataset">
+<meta name="savepage-from" content="http://www.cs.toronto.edu/~delve/data/census-house/censusDetail.html">
+<meta name="savepage-date" content="Fri Feb 19 2021 08:39:34 GMT-0300 (Brasilia Standard Time)">
+<meta name="savepage-state" content="Standard Items; Retain cross-origin frames; Merge CSS images; Remove unsaved URLs; Load lazy images in existing content; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="25.2">
+<meta name="savepage-comments" content="">
+  </head> 
+<body><h2 align="CENTER">  Census dataset </h2>
+The dataset was designed on the basis of data provided by <a data-savepage-href="http://www.census.gov" href="http://www.census.gov/"> US Census Bureau  </a> (under <a href="http://www.census.gov/cdrom/lookup"> Lookup access</a>: Summary
+Tape File 1).<br>
+ The data were collected as part of  the 1990 US census. These are
+mostly counts cumulated at different survey levels. For the purpose of
+this data set a level <em>State-Place</em> was used. Data from all states
+was obtained. Most of the counts were changed into appropriate
+proportions. 
+<p></p>
+<p>There are 4 prototasks: </p><ol>
+<li> house-price-8H
+</li><li> house-price-8L
+</li><li> house-price-16H
+</li><li> house-price-16L
+</li></ol>
+<p></p>
+
+These are all concerned with predicting the median price of the house
+in the region based on demographic composition and a state of housing
+market in the region. A number in the name signifies dimensionality of
+the input. A following letter denotes a very rough approximation to
+the difficulty of the task. For Low task difficulty, more correlated
+inputs were choosen as signified by univariate smooth fit of that
+input on the target. Tasks with High difficulty have had their inputs
+choosen to make the modeling more difficult due to higher variance or
+lower correlation of the inputs to the target.
+
+<p> Each prototask has 6 tasks of sizes: 64 128 256 512 1024
+2048. <br> 
+The test sets are hierarchical - within each task, separate
+test set is used for each instance.
+
+</p><h3>The inputs used by any of the four prototasks are as follows:</h3>
+<ol>
+<li>P1 ----      total persons count in the region
+</li><li>P2 ----     total families' count in the region
+</li><li>P3 ----  total number of households (HH's)
+</li><li>P5.1 ---	percentage of males
+</li><li>P6.2 --- 	percentage of black people
+</li><li>P6.4 --- percentage of people which are of Asian or Pacific Islander race
+</li><li>P11.3 --	percentage of people between 25-64 years of age
+</li><li>P11.4 --    percentage over 64 years old
+</li><li>P14.6 --    percentage of never-married females
+</li><li>P14.9 --    percentage widowed females
+</li><li>P15.1 --     percentage of people in family HH's
+</li><li>P15.3 --     percentage of people in group quarters (incl 
+           	jails)
+</li><li>P16.1 --	percentage of HH's with 1 person
+</li><li>P16.2 --     percentage of HH's with 2 or more persons 
+           which are family HH-lds
+</li><li>P17A --	average family size
+</li><li>P18.2 --     percentage of HH's with 1+ persons under 18 
+           which are non-family HH-lds
+</li><li>P19.2 -- percentage of HH's with black Householder (HH'lder)
+</li><li>P19.4 -- percentage of HH's with asian  HH'lder
+</li><li>P20.1 -- percentage of HH's with Hispanic HH'lder
+</li><li>P25.1 -- percentage of HH's with more then two persons 65 years old or more
+</li><li>P26.1 -- percentage of HH's with more then one non-relatives living in
+</li><li>P27.4 --     percentage of HH-lds which are non-family with 
+           2+ persons
+</li><li>H1 ---- total number of Housing Units (HU's)
+</li><li>H2.1 ---	percentage of HU's occupied
+</li><li>H2.2  ---     percentage of HU's vacant
+</li><li>H3.1 --- percentage of occupied HU's which are owner-occupied
+</li><li>H5.2 --  percentage of vacant HU's which are for sale only
+</li><li>H5.6 --  percentage of vacant HU's which are not for rent, sale, 
+	migrant workers nor for seasonal, recreational or occasional use
+</li><li>H8.1  ---     percentage of occ-ed HU's with white HH-lder
+</li><li>H8.2  ---     percentage of occ-ed HU's with black HH-lder
+</li><li>H10.1 --     percentage of occ-ed HU's with HH-lder not of 
+           Hispanic origin
+</li><li>H10.2 --     percentage of occ-ed HU's with HH-lder of 
+           Hispanic origin
+</li><li>H13.1 --     percentage of HU's with 1-4 rooms
+</li><li>H15.1 --	Average number of rooms in an owner-occupied HU's
+</li><li>H18.A --     average number of persons per ownOcc HU's
+</li><li>H40.4 --     percentage of vacant-for-sale HU's vacant more 
+                                  then 6 months
+
+</li></ol>
+
+<p></p>
+<p><strong>Contributed by: </strong>  <a href="mailto:rafal@cs.utoronto.ca"> Rafal Kustra</a>.
+
+
+<br><br>
+<hr size="4"><table width="100%"><tbody><tr>
+<td colstart="3" width="60%" align="LEFT">
+<address>Last Updated 8 October 1996  <br> Comments and questions to: <a href="mailto:delve@cs.toronto.edu">delve@cs.toronto.edu</a></address>
+</td>
+<td colstart="3" width="40%" align="RIGHT"><a data-savepage-href="../../copyright.html" href="http://www.cs.toronto.edu/~delve/copyright.html"><img data-savepage-currentsrc="http://www.cs.toronto.edu/~delve/images/copybtn.gif" data-savepage-src="../../images/copybtn.gif" src="data:image/gif;base64,R0lGODdhHgAeAPcAAOvt7t3h49fb3snP0sLJzbS8waewtpijqpKepX6MlXeGj2x6g2BsdFVgZ09aYCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCgtMCwAAAAAHgAeAAAI/wABCBxIsKDBgwAYIFzIEIABhQAESBxAsWJFAwQIGNhIYIBEAQM0Jlgg8KPFkwUKECiwsYDHACBTKiAJoCLIkCwJPNjJ08ABAwMCCNVoIEECgQNUxtzIs2lPAgICJE2ZQAFSoC5hNk0atGnMAQc8IrBaE2PHADxhZgwqledaoAEMICjZkeLOqBMHNNX6gCLcA0drFgC5k4BUl053In6gcTCCuQ5/8gyaNLFiAzxTDkBwQKDcAzs9CmhqwKXEAgdSK2bJgGzlwgQQuFWZEQFHnbAZQORbN3POiitTYu47YAFEiYX1Xk7ZcXDS0gWS6/YcnbHyB7c7Ah1we/V0h8Ovr8SkWDfj+JCwFZBNGbopVK4CcD+IGXoz5JVpLScmHLrAArLm7YSWfgKqldxDEK2V1mhO4QUTg8QRUJVAHfFnGHw4XbhYhUQhxZ1Kk7FUWl1tKXaWAD555lNp1z2QGosQusiiUAhAlFpKIhLIU14vKQARczhWqN9hHmW4AE11oYaRUBR9FQAAh7VU13chhVRXVC9VJJQAqL1o2pEOLZDAAQgk8NhPGwFmlHEKnAnYkWJ2phsDZj7G2UZpGqXbAi/KxcACdwYEADs=" alt="Copyright" hspace="5" border="0" align="BOTTOM"></a></td>
+</tr>
+
+</tbody></table>
+</p></body></html>
